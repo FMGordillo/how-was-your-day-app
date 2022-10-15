@@ -3,6 +3,7 @@ import { NavigationContainer, DefaultTheme, DarkTheme } from '@react-navigation/
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import * as React from 'react';
 import { ColorSchemeName } from 'react-native';
+import { AuthContext } from '../providers/AuthProvider';
 import HomeScreen from '../screens/HomeScreen';
 // import Colors from '../constants/Colors';
 // import useColorScheme from '../hooks/useColorScheme';
@@ -20,6 +21,8 @@ const ROUTES = {
 }
 
 export default function Navigation({ colorScheme }: { colorScheme: ColorSchemeName }) {
+  const authState = React.useContext(AuthContext);
+
   return (
     <NavigationContainer
       linking={LinkingConfiguration}
