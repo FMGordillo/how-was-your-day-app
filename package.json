@@ -1,7 +1,8 @@
 {
   "name": "ratemyday",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "main": "node_modules/expo/AppEntry.js",
+  "author": "Facundo Martin Gordillo <me@facundogordillo.com>",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
